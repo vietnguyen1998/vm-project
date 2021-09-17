@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 export default function SignUp() {
   React.useEffect(() => {});
@@ -84,7 +83,6 @@ export default function SignUp() {
         Crafted with ♡ by{" "}
         <a
           className="text-blue-500"
-          target="_blank"
           href="https://web3templates.com/components/"
         >
           Web3Templates

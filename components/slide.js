@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-
+import Image from 'next/image'
 export default function Slide() {
   React.useEffect(() => {
     const slides = document.querySelectorAll("div.slide-s ul li");
@@ -41,10 +41,10 @@ export default function Slide() {
       <div className="relative h-slider">
         <div className="absolute flex abs-slide z-10 ">
           <div className="md:mr-4 md:mb-4 shadow-md hidden md:block">
-            <img src="/anh.jpg" />
+            <Image src="/anh.jpg" alt="" layout='fill'/>
           </div>
           <div className="md:ml-4 md:mb-4 shadow-md">
-            <img src="/anh.jpg" />
+            <Image src="/anh.jpg"  alt="" layout='fill'/>
           </div>
         </div>
         <div className="slide-s overflow-hidden h-full">

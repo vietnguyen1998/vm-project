@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-
+import Image from "next/image";
 export default function HeaderProgess(props) {
   React.useEffect(() => {
     console.log(props);
@@ -11,12 +11,12 @@ export default function HeaderProgess(props) {
     <React.Fragment>
       <div className="flex justify-between">
         <div className="hidden lg:block">
-          <Link href="/">
+          <Link href="/" passHref={true}>
             <a
               href="#"
               className="flex items-center py-3 text-gray-700 hover:text-gray-900"
             >
-              <img className="w-56" src="/logo.png"></img>
+              <Image className="w-56" src="/logo.png" alt=""></Image>
             </a>
           </Link>
         </div>

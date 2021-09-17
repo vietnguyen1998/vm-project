@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image'
 export default function Products() {
   React.useEffect(() => {
     const productHeaders = document.querySelectorAll("div.product-header div");
@@ -201,14 +202,15 @@ export default function Products() {
           <div className="container mx-auto">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
-                <Link href="/detail">
+                <Link href="/detail" passHref={true}>
                   <article className="overflow-hidden hover:shadow-lg">
                     <div className="p-8 pb-4 pt-4">
-                      <img
+                      <Image
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                      ></img>
+                        layout='fill'
+                      ></Image>
                     </div>
 
                     <header className="leading-tight p-8 pb-4 pt-0">
@@ -229,14 +231,15 @@ export default function Products() {
                 </Link>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
-                <Link href="/detail">
+                <Link href="/detail" passHref={true}>
                   <article className="overflow-hidden hover:shadow-lg">
                     <div className="p-8 pb-4 pt-4">
-                      <img
+                      <Image
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                      ></img>
+                        layout='fill'
+                      ></Image>
                     </div>
 
                     <header className="leading-tight p-8 pb-4 pt-0">
@@ -258,14 +261,15 @@ export default function Products() {
               </div>
 
               <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
-                <Link href="/detail">
+                <Link href="/detail" passHref={true}>
                   <article className="overflow-hidden hover:shadow-lg">
                     <div className="p-8 pb-4 pt-4">
-                      <img
+                      <Image
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                      ></img>
+                        layout='fill'
+                      ></Image>
                     </div>
 
                     <header className="leading-tight p-8 pb-4 pt-0">
@@ -286,14 +290,15 @@ export default function Products() {
                 </Link>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
-                <Link href="/detail">
+                <Link href="/detail" passHref={true}>
                   <article className="overflow-hidden hover:shadow-lg">
                     <div className="p-8 pb-4 pt-4">
-                      <img
+                      <Image
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                      ></img>
+                        layout='fill'
+                      ></Image>
                     </div>
 
                     <header className="leading-tight p-8 pb-4 pt-0">
@@ -314,14 +319,15 @@ export default function Products() {
                 </Link>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
-                <Link href="/detail">
+                <Link href="/detail" passHref={true}>
                   <article className="overflow-hidden hover:shadow-lg">
                     <div className="p-8 pb-4 pt-4">
-                      <img
+                      <Image
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                      ></img>
+                        layout='fill'
+                      ></Image>
                     </div>
 
                     <header className="leading-tight p-8 pb-4 pt-0">

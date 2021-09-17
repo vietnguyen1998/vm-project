@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 import Link from "next/link";
-
+import Image from 'next/image'
 export default function Header() {
   React.useEffect(() => {
     debugger
@@ -106,12 +106,12 @@ export default function Header() {
                 <div className="flex space-x-4">
                   {/* <!-- logo --> */}
                   <div>
-                    <Link href="/">
+                    <Link href="/" passHref={true}>
                       <a
                         href="#"
                         className="flex items-center py-3 text-gray-700 hover:text-gray-900"
                       >
-                        <img className="w-56" src="/logo.png"></img>
+                        <Image src="/logo.png" alt="" width={370} height={100}></Image>
                       </a>
                     </Link>
                   </div>
@@ -216,6 +216,7 @@ export default function Header() {
                       href={{
                         pathname: "/cart",
                       }}
+                      passHref={true}
                     >
                       <div className="py-2 px-5 text-white transition duration-300">
                         <FontAwesomeIcon
@@ -261,6 +262,7 @@ export default function Header() {
                       href={{
                         pathname: "/cart",
                       }}
+                      passHref={true}
                     >
                       <div className="py-2 px-5 text-white transition duration-300">
                         <FontAwesomeIcon

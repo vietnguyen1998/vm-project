@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node scripts/migrate-db.js && next dev",
+    "dev": "next dev",
     "build": "next build",
-    "mock-server": "json-server --watch ./db.json -p 4001 -d 1500",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -17,13 +17,12 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.38.0",
-    "serverless-mysql": "^1.5.4",
-    "sqlite": "^3.0.6",
-    "sqlite3": "^4.2.0"
+    "sass": "^1.38.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.20",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.7",
     "postcss-loader": "^4.0.4",

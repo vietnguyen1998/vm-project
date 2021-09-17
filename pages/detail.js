@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import "../styles/Detail.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
@@ -7,7 +6,7 @@ import {
   faPlus,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-
+import Image from 'next/image'
 export default function About() {
   React.useEffect(() => {});
 
@@ -67,7 +66,7 @@ export default function About() {
             <li className="px-2">Data</li>
           </ol>
           <div className="mx-auto flex flex-wrap">
-            <img
+            <Image 
               alt="ecommerce"
               className="lg:w-1/2 lg:h-1/2 w-full object-cover object-center rounded border border-gray-200"
               src="/12.jpg"

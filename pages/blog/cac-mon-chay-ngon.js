@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
   faFacebook,
@@ -7,6 +6,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCircle, faDotCircle } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 export default function Slug(props) {
   React.useEffect(() => {
     console.log(props);
@@ -40,10 +40,13 @@ export default function Slug(props) {
       <div className="grid grid-cols-12">
         <div className="col-span-12 pr-4 md:col-span-8">
           <div className="rounded">
-            <img
+            <Image
+              alt=""
               className="w-full rounded-t"
               src="/blog-food-1/salad-chay-9.jpg"
-            ></img>
+              width={1000}
+              height={1000}
+            ></Image>
             <div className="px-4">
               <h6 className="text-center text-4xl font-medium py-4">
                 Các món ăn chay
@@ -141,10 +144,13 @@ export default function Slug(props) {
                 <div className="grid grid-cols-12">
                   <div className="col-span-12 md:col-span-7">
                     <p className="text-xl font-medium mt-4 mb-2">Mayonnaise</p>
-                    <img
+                    <Image
+                      alt=""
                       className="w-full rounded"
                       src="/blog-food-1/mayonnaise.jpg"
-                    ></img>
+                      width={1000}
+                      height={563}
+                    ></Image>
                   </div>
                   <div className="col-span-12 md:col-span-5 md:pl-4">
                     <p className="font-medium text-lg mt-4 mb-2  md:pt-8">
@@ -174,10 +180,13 @@ export default function Slug(props) {
                 </p>
                 <div className="grid grid-cols-12">
                   <div className="col-span-12 md:col-span-7">
-                    <img
+                    <Image
+                      alt=""
                       className="w-full rounded"
                       src="/salad-tron-giam.jpg"
-                    ></img>
+                      width={760}
+                      height={430}
+                    ></Image>
                   </div>
                   <div className="col-span-12 md:col-span-5 md:pl-4">
                     <p className="font-medium text-lg mt-4 mb-2">
@@ -224,10 +233,13 @@ export default function Slug(props) {
               <p className="text-3xl font-medium mt-8 mb-4">2. Salad Bơ</p>
               <div className="grid grid-cols-12">
                 <div className="col-span-12 md:col-span-7">
-                  <img
+                  <Image
+                    alt=""
                     className="w-full rounded"
                     src="/blog-food-1/salad-bo.jpg"
-                  ></img>
+                    width={1400}
+                    height={933}
+                  ></Image>
                 </div>
                 <div className="col-span-12 md:col-span-5 md:pl-4">
                   <p className="font-medium text-lg mb-2">Nguyên liệu:</p>
@@ -263,10 +275,13 @@ export default function Slug(props) {
               <p className="text-3xl font-medium mt-8 mb-4">3. Salad cải mầm</p>
               <div className="grid grid-cols-12">
                 <div className="col-span-12 md:col-span-7">
-                  <img
+                  <Image
+                    alt=""
                     className="w-full rounded"
                     src="/blog-food-1/cai-mam.jpg"
-                  ></img>
+                    width={1200}
+                    height={630}
+                  ></Image>
                 </div>
                 <div className="col-span-12 md:col-span-5 md:pl-4">
                   <p className="font-medium text-lg mb-2">Nguyên liệu:</p>
@@ -304,10 +319,13 @@ export default function Slug(props) {
               <p className="text-3xl font-medium mt-8 mb-4">4. Gỏi đu đủ </p>
               <div className="grid grid-cols-12">
                 <div className="col-span-12 md:col-span-7">
-                  <img
+                  <Image
+                    alt=""
                     className="w-full rounded"
                     src="/blog-food-1/goi-du-du-chay.jpg"
-                  ></img>
+                    width={600}
+                    height={400}
+                  ></Image>
                 </div>
                 <div className="col-span-12 md:col-span-5 md:pl-4">
                   <p className="font-medium text-lg mb-2">Nguyên liệu:</p>
@@ -351,10 +369,13 @@ export default function Slug(props) {
               <p className="text-3xl font-medium mt-8 mb-4">5. Gỏi bắp cải</p>
               <div className="grid grid-cols-12">
                 <div className="col-span-12 md:col-span-7">
-                  <img
+                  <Image
+                    alt=""
                     className="w-full rounded"
                     src="/blog-food-1/nom_bap_cai_chay.jpg"
-                  ></img>
+                    width={550}
+                    height={356}
+                  ></Image>
                 </div>
                 <div className="col-span-12 md:col-span-5 md:pl-4">
                   <p className="font-medium text-lg mb-2">Nguyên liệu:</p>
@@ -397,11 +418,14 @@ export default function Slug(props) {
                 6. Gỏi bắp chuối (bông chuối){" "}
               </p>
               <div className="grid grid-cols-12">
-                <div className="col-span-12 md:col-span-7">
-                  <img
+                <div className="col-span-12 md:col-span-7 w-full">
+                  <Image
+                    alt=""
                     className="w-full rounded"
                     src="/blog-food-1/salad-bo.jpg"
-                  ></img>
+                    width={1400}
+                    height={933}
+                  ></Image>
                 </div>
                 <div className="col-span-12 md:col-span-5 md:pl-4">
                   <p className="font-medium text-lg mb-2">Nguyên liệu:</p>

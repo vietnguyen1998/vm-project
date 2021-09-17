@@ -1,11 +1,11 @@
 import React from "react";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
   faMinus,
   faPlus,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons"; //
+import Image from 'next/image'
 export default function About() {
   function decrement(e) {
     const btn = e.target.parentNode.parentElement.querySelector(
@@ -40,7 +40,7 @@ export default function About() {
             <ul className="border px-4 flex flex-col divide-y divide-coolGray-300">
               <li className="flex flex-col py-4 sm:flex-row sm:justify-between">
                 <div className="flex w-full space-x-2 sm:space-x-4">
-                  <img
+                  <Image
                     className="flex-shrink-0 object-cover w-20 h-20 border-transparent rounded outline-none sm:w-32 sm:h-32"
                     src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
                     alt="Polaroid camera"
@@ -115,7 +115,7 @@ export default function About() {
               </li>
               <li className="flex flex-col py-4 sm:flex-row sm:justify-between">
                 <div className="flex w-full space-x-2 sm:space-x-4">
-                  <img
+                  <Image
                     className="flex-shrink-0 object-cover w-20 h-20 border-transparent rounded outline-none sm:w-32 sm:h-32"
                     src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
                     alt="Polaroid camera"
@@ -190,7 +190,7 @@ export default function About() {
               </li>
               <li className="flex flex-col py-4 sm:flex-row sm:justify-between">
                 <div className="flex w-full space-x-2 sm:space-x-4">
-                  <img
+                  <Image
                     className="flex-shrink-0 object-cover w-20 h-20 border-transparent rounded outline-none sm:w-32 sm:h-32"
                     src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
                     alt="Polaroid camera"
