@@ -213,7 +213,7 @@ export default function About() {
                 <div className="border h-full bg-blue-400 px-4 py-2 text-white rounded border-l-0 rounded-l-none border-blue-400">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    size="x"
+                    size="1x"
                     onClick={addNewSize}
                   />
                 </div>
