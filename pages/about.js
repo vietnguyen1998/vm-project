@@ -4,7 +4,7 @@ export default function About() {
   React.useEffect(() => {});
   return (
     <div>
-        <a>Aboudsftasdd Us</a>
+        <a>About Us</a>
     </div>
   );
 }

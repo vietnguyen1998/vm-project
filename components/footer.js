@@ -1,219 +1,65 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faFacebook, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons"; // import the icons you need
+import {
+  faFacebook,
+  faTiktok,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons"; // import the icons you need
+import Image from "next/image";
 export default function Footer() {
-  React.useEffect(() => {
-   
-  });
+  React.useEffect(() => {});
 
- 
   return (
     <React.Fragment>
-      <footer className="footer-1 py-8 sm:py-12">
-        <div className="container mx-auto px-4">
-          <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-            <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
-              <h5 className="text-xl font-bold mb-6">Features</h5>
-              <ul className="list-none footer-links">
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Cool stuff
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Random feature
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Team feature
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Stuff for developers
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Another one
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Last time
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-              <h5 className="text-xl font-bold mb-6">Resources</h5>
-              <ul className="list-none footer-links">
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Resource
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Resource name
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Another resource
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Final resource
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-              <h5 className="text-xl font-bold mb-6">About</h5>
-              <ul className="list-none footer-links">
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Team
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Locations
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Privacy
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Terms
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-              <h5 className="text-xl font-bold mb-6">Help</h5>
-              <ul className="list-none footer-links">
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Support
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Help Center
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    href="#"
-                    className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
-              <div className="flex sm:justify-center xl:justify-start">
-                <a
-                  href=""
-                  className="border-gray-400 border text-center text-gray-600 bg-white"
-                >
-                  <FontAwesomeIcon icon={faFacebook} size="2x"/>
-                </a>
-                <a
-                  href=""
-                  className="mx-4 w-8 h-8 border-gray-400 rounded-full text-center text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400"
-                >
-                  <FontAwesomeIcon icon={faYoutube} size="lg"/>
-                </a>
-                <a
-                  href=""
-                  className="w-8 h-8 border-gray-400 rounded-full text-center text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600"
-                >
-                  <FontAwesomeIcon icon={faTiktok} size="2x"/>
-                </a>
+      <footer className="footer-1 bg-gray-100 pt-4 pb-2 px-4 md:px-0 mt-8">
+        <div className="container mx-auto divide-y divide-gray-300">
+          <div className="grid grid-cols-12 pt-4">
+            <div className="col-span-12 md:col-span-6">
+              <div className="mb-4 flex justify-center md:justify-start">
+                <Image src="/logo.png" alt="" width={245} height={60}></Image>
+              </div>
+              <div className="text-sm">
+                <span className="font-bold mr-1">A</span>
+                <span>
+                  74 đường số 6, P.Linh Trung, Q.Thủ Đức, Tp. Hồ Chí Minh
+                </span>
+              </div>
+              <div className="text-sm">
+                <span className="font-bold mr-1">T</span>
+                <span>0388980943</span>
+              </div>
+              <div className="text-sm">
+                <span className="font-bold mr-1">G</span>
+                <span>veganmediavn@gmail.com</span>
               </div>
             </div>
+            <div className="col-span-6 md:col-span-3 pt-2 pl-0 md:pl-2 text-sm">
+              <p className="py-1">About Us</p>
+              <p className="py-1">Submit an article</p>
+              <p className="py-1">Corrections & Complaints</p>
+              <p className="py-1">Advertise</p>
+            </div>
+            <div className="col-span-6 md:col-span-3 pt-2 pl-2 text-sm">
+              <p className="py-1">Privacy Policy</p>
+              <p className="py-1">Affiliate Policy</p>
+              <p className="py-1">RSS Feed</p>
+            </div>
           </div>
-
-          <div className="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t">
-            <div className="sm:w-full px-4 md:w-1/6">
-              <strong>FWR</strong>
-            </div>
-            <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-              <h6 className="font-bold mb-2">Address</h6>
-              <address className="not-italic mb-4 text-sm">
-                123 6th St.<br></br>
-                Melbourne, FL 32904
-              </address>
-            </div>
-            <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-              <h6 className="font-bold mb-2">Free Resources</h6>
-              <p className="mb-4 text-sm">
-                Use our HTML blocks for <strong>FREE</strong>.<br></br>
-                <em>All are MIT License</em>
+          <div className="grid grid-cols-12 text-xs mt-8 py-2">
+            <div className="col-span-8 flex flex-col justify-center pr-2">
+              <p className="font-medium">© 2021 - Bản quyền của Công Ty Cổ Phần Vegan Media - veganmedia.me</p>
+              <p>
+                Giấy chứng nhận Đăng ký Kinh doanh số 0316451577
               </p>
             </div>
-            <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
-              <button className="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white">
-                Get Started
-              </button>
+            <div className="col-span-4 flex justify-end">
+              <Image
+                alt=""
+                title=""
+                src="/logoSaleNoti.png"
+                width={145}
+                height={55}
+              />
             </div>
           </div>
         </div>

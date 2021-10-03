@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="h-full">
       <Slide></Slide>
-      <Products></Products>
+      {/* <Products></Products> */}
     </div>
   );
 }

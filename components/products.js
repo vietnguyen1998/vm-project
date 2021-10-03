@@ -209,7 +209,8 @@ export default function Products() {
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                        layout='fill'
+                        width={400}
+                        height={400}
                       ></Image>
                     </div>
 
@@ -238,7 +239,8 @@ export default function Products() {
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                        layout='fill'
+                        width={400}
+                        height={400}
                       ></Image>
                     </div>
 
@@ -268,7 +270,8 @@ export default function Products() {
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                        layout='fill'
+                        width={400}
+                        height={400}
                       ></Image>
                     </div>
 
@@ -297,7 +300,8 @@ export default function Products() {
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                        layout='fill'
+                        width={400}
+                        height={400}
                       ></Image>
                     </div>
 
@@ -326,7 +330,8 @@ export default function Products() {
                         alt="Placeholder"
                         className="block h-auto w-auto product-img-height"
                         src="/12.jpg"
-                        layout='fill'
+                        width={400}
+                        height={400}
                       ></Image>
                     </div>
 
