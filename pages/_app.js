@@ -1,15 +1,25 @@
-import React from 'react';
-import App from 'next/app';
+import { useEffect } from 'react';
+import { pageview } from 'lib/gtag';
 import 'tailwindcss/tailwind.css'
 import './index.css'
 import Layout from '../components/layout';
-export default class MyApp extends App {
-  render () {
-    const { Component, pageProps } = this.props
-    return (
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    )
-  }
-}
+
+const MyApp = ({ Component, pageProps, router }) => {
+  useEffect(() => {
+    const handleRouteChange = url => {
+      pageview(url, document.title);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+};
+
+export default MyApp;
