@@ -3,11 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import useTrans from "../../hook/useTrans";
-
+import PageView from "components/PageView";
+import { useRouter } from "next/router";
 export default function Slug(props) {
-  React.useEffect(() => {
-    console.log(props);
-  }, [props]);
+  const { locale } = useRouter();
   const trans = useTrans();
 
   function onClickSCrollIntoViewbyId(id) {
@@ -26,9 +25,10 @@ export default function Slug(props) {
               alt=""
               className="w-full rounded-t"
               src="/blog-food-1/bap-cai-cuon/bap-cai-cuon-chay.jpg"
-              width={840}
-              height={840}
+              width={1200}
+              height={630}
             ></Image>
+            <PageView date={locale == "vi" ? "31 Tháng 10, 2021" : "October 31, 2021"} />
             <div className="px-4 md:px-0">
               <h6 className="text-center text-4xl font-medium py-4">
                 {trans.bap_cai_cuon.title3}

@@ -81,16 +81,16 @@ export default function Slide() {
                   FOODS
                 </p>
                 <div className="grid grid-cols-12 -ml-8">
-                  <div className="col-span-6 md:col-span-4 pl-8 mb-2">
+                  <div className="col-span-6 md:col-span-4 pl-8 mb-8">
                     <Link href="/blog/bap-cai-cuon" passHref={true}>
                       <article className="overflow-hidden hover:shadow-lg">
                         <div>
                           <Image
                             alt=""
-                            className="w-full rounded-t"
+                            className="w-full rounded-t object-cover"
                             src="/blog-food-1/bap-cai-cuon/bap-cai-cuon-chay.jpg"
                             width={255}
-                            height={255}
+                            height={170}
                           ></Image>
                         </div>
 
@@ -111,10 +111,10 @@ export default function Slide() {
                         <div>
                           <Image
                             alt=""
-                            className="w-full rounded-t"
+                            className="w-full rounded-t object-cover"
                             src="/blog-food-1/canh-bi-do/photo.jpg"
                             width={255}
-                            height={255}
+                            height={170}
                           ></Image>
                         </div>
 
@@ -135,10 +135,10 @@ export default function Slide() {
                         <div>
                           <Image
                             alt=""
-                            className="w-full rounded-t"
+                            className="w-full rounded-t object-cover"
                             src="/blog-food-1/salad-chay-9.jpg"
                             width={255}
-                            height={255}
+                            height={170}
                           ></Image>
                         </div>
 
@@ -159,10 +159,10 @@ export default function Slide() {
                         <div>
                           <Image
                             alt=""
-                            className="w-full rounded-t"
+                            className="w-full rounded-t object-cover"
                             src="/blog-food-1/kho-quet/1567310029-5058-Le20Gia20Kho20quet20chay.jpg"
                             width={255}
-                            height={255}
+                            height={170}
                           ></Image>
                         </div>
 
@@ -183,10 +183,10 @@ export default function Slide() {
                         <div>
                           <Image
                             alt=""
-                            className="w-full rounded-t"
+                            className="w-full rounded-t object-cover"
                             src="/blog-food-1/nem-nuong/nem-nuong-chay-2.jpg"
                             width={255}
-                            height={255}
+                            height={170}
                           ></Image>
                         </div>
 

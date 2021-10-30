@@ -1,11 +1,14 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+// pages/_document.js
+// eslint-disable-next-line @next/next/no-document-import-in-page
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GA_TRACKING_ID } from 'lib/gtag';
-
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
+          <link rel="shortcut icon" href="/favicon.ico" />
+
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async

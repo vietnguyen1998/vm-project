@@ -8,12 +8,15 @@ import {
 import { faCircle, faDotCircle } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import useTrans from "../../hook/useTrans";
+import PageView from "components/PageView";
+import { useRouter } from "next/router";
 
 export default function Slug(props) {
   React.useEffect(() => {
     console.log(props);
   }, [props]);
   const trans = useTrans();
+  const { locale } = useRouter();
 
   function onClickSCrollIntoViewbyId(id) {
     let elementId = document.getElementById(id);
@@ -34,6 +37,7 @@ export default function Slug(props) {
               width={850}
               height={850}
             ></Image>
+            <PageView date={locale == "vi" ? "31 Tháng 10, 2021" : "October 31, 2021"} />
             <div className="px-4 md:px-0">
               <h6 className="text-center text-4xl font-medium py-4">
                 {trans.canh_bi_do.t1}

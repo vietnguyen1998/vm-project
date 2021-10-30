@@ -26,26 +26,31 @@ export default function Layout(props) {
       return;
     }
     return (
-      <ol className="list-reset py-4 rounded flex bg-grey-light text-grey -ml-2">
-        <li className="px-2">
-          <Link href="/">
-            <a className="no-underline text-blue-500 font-medium">Home</a>
-          </Link>
-        </li>
-        {0 != getPaths().length ? <li>/</li> : <li></li>}
-        {getPaths().map((e, index) => {
-          return (
-            <React.Fragment key={e}>
-              <li className="px-2">
-                <a href="#" className="no-underline text-blue-500 font-medium">
-                  {e}
-                </a>
-              </li>
-              {index != getPaths().length - 1 ? <li>/</li> : <li></li>}
-            </React.Fragment>
-          );
-        })}
-      </ol>
+      <React.Fragment>
+        <ol className="list-reset py-4 rounded flex bg-grey-light text-grey -ml-2">
+          <li className="px-2">
+            <Link href="/">
+              <a className="no-underline text-blue-500 font-medium">Home</a>
+            </Link>
+          </li>
+          {0 != getPaths().length ? <li>/</li> : <li></li>}
+          {getPaths().map((e, index) => {
+            return (
+              <React.Fragment key={e}>
+                <li className="px-2">
+                  <a
+                    href="#"
+                    className="no-underline text-blue-500 font-medium"
+                  >
+                    {e}
+                  </a>
+                </li>
+                {index != getPaths().length - 1 ? <li>/</li> : <li></li>}
+              </React.Fragment>
+            );
+          })}
+        </ol>
+      </React.Fragment>
     );
   }
   return (
