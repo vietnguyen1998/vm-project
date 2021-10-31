@@ -26,8 +26,8 @@ export default function Slug(props) {
               alt=""
               className="w-full rounded-t"
               src="/blog-food-1/nem-nuong/nem-nuong-chay-2.jpg"
-              width={850}
-              height={850}
+              width={1200}
+              height={630}
             ></Image>
             <PageView date={locale == "vi" ? "31 Tháng 10, 2021" : "October 31, 2021"} />
             <div className="px-4 md:px-0">

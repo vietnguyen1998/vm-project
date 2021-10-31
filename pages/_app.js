@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 const MyApp = ({ Component, pageProps, router }) => {
   useEffect(() => {
     const handleRouteChange = (url) => {
+      console.log(url)
       pageview(url, document.title);
     };
     router.events.on("routeChangeComplete", handleRouteChange);

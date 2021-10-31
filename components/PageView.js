@@ -1,9 +1,9 @@
 import React from "react";
 import useSWR from "swr";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default function PageView(props) {
-  const router = useRouter()
+  const router = useRouter();
 
   const o_view = useSWR(
     `/api/page-views?post=${encodeURIComponent(router.pathname)}`,
@@ -33,9 +33,9 @@ export default function PageView(props) {
   );
 
   const views =
-    Number.parseInt(o_view?.data?.pageViews || 0) +
-    Number.parseInt(o_vi_view?.data?.pageViews || 0) +
-    Number.parseInt(o_en_view?.data?.pageViews || 0);
+    Number.parseInt(o_view?.data?.pageViews ||  "0") +
+    Number.parseInt(o_vi_view?.data?.pageViews ||  "0") +
+    Number.parseInt(o_en_view?.data?.pageViews ||  "0");
 
   return (
     <React.Fragment>

@@ -32,8 +32,8 @@ export default function Slug(props) {
               alt=""
               className="w-full rounded-t"
               src="/blog-food-1/kho-quet/1567310029-5058-Le20Gia20Kho20quet20chay.jpg"
-              width={850}
-              height={850}
+              width={1200}
+              height={630}
             ></Image>
             <PageView date={locale == "vi" ? "31 Tháng 10, 2021" : "October 31, 2021"} />
             <div className="px-4 md:px-0">
@@ -94,7 +94,7 @@ export default function Slug(props) {
                       className="w-full rounded"
                       src="/blog-food-1/kho-quet/cach-lam-kho-quet-chay-cham-rau.jpg"
                       width={660}
-                      height={440}
+                      height={540}
                     ></Image>
                   </div>
                   <div className="col-span-12 md:col-span-5 md:pl-4">
