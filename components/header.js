@@ -21,8 +21,11 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRouter } from 'next/router';
+
 export default function Header() {
   React.useEffect(() => {});
+  const { locale } = useRouter()
 
   function closeLogin() {
     const closeModal = document.querySelectorAll("button.close-modal");
@@ -106,7 +109,7 @@ export default function Header() {
         <div className="container mx-auto py-4">
           <div className="grid grid-cols-12">
             <div className="col-span-3 flex items-center ">
-              <div className="hidden md:flex">
+              <div className="hidden md:flex items-center">
                 <Link href="https://www.facebook.com/groups/3802339539871895">
                   <a target="_blank">
                     {" "}
@@ -121,6 +124,20 @@ export default function Header() {
                 />
                 <FontAwesomeIcon icon={faTwitter} size="lg" />
                 <FontAwesomeIcon icon={faYoutube} size="lg" className="mx-4" />
+                <div className="flex items-center justify-center">
+                  <button
+                    className="text-white border-r bg-gray-600 border-l border-t border-b border-gray-500 font-bold uppercase text-xs px-2  rounded-l outline-none focus:outline-none ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    En
+                  </button>
+                  <button
+                    className="text-gray-500 bg-transparent border-t border-b border-r border-gray-500 font-bold uppercase text-xs px-2  rounded-r outline-none focus:outline-none ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    Vi
+                  </button>
+                </div>
               </div>
 
               <div className="md:hidden flex items-center">
