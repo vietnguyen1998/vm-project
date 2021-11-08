@@ -21,11 +21,11 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 export default function Header() {
   React.useEffect(() => {});
-  const { locale } = useRouter()
+  const { locale } = useRouter();
 
   function closeLogin() {
     const closeModal = document.querySelectorAll("button.close-modal");
@@ -242,12 +242,15 @@ export default function Header() {
                         >
                           YOUTUBE
                         </a>
-                        <a
-                          href="#"
-                          className="py-2 px-3 text-gray-800 hover:text-gray-800 text-base font-bold"
-                        >
-                          SHOPPING
-                        </a>
+                        <Link href="/cart" passHref={true}>
+                          <a
+                            href="#"
+                            className="py-2 px-3 text-gray-800 hover:text-gray-800 text-base font-bold"
+                          >
+                            SHOPPING
+                          </a>
+                        </Link>
+
                         <a
                           href="#"
                           className="py-2 px-3 text-gray-800 hover:text-gray-800 text-base font-bold"
